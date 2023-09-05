@@ -16,6 +16,22 @@ This tool is designed to help recruiters automate the process of extracting data
 - **Requests**: For API calls.
 - **OpenAI API Key**: Required for generating messages with ChatGPT.
 
+## Setting up Selenium Drivers
+
+Before you can run the tool, you'll need the appropriate drivers for the browsers you intend to use.
+
+### Chrome:
+1. Determine which version of Chrome you're using. You can do this by navigating to the three vertical dots at the top-right corner of your Chrome browser > Help > About Google Chrome.
+2. Once you've identified your Chrome version, download the corresponding ChromeDriver from the [official site](https://sites.google.com/a/chromium.org/chromedriver/downloads).
+3. Extract the downloaded file and place the `chromedriver` executable in a location of your choice. Make sure to add this location to your system's PATH or reference it directly in your script.
+
+### Firefox (GeckoDriver):
+1. Determine which version of Firefox you're using. Open Firefox, click on the three horizontal lines at the top-right corner > Help > About Firefox.
+2. Download the corresponding GeckoDriver for your platform and Firefox version from the [official GitHub releases](https://github.com/mozilla/geckodriver/releases).
+3. Extract the downloaded file and place the `geckodriver` executable in a location of your choice. Again, ensure this location is added to your system's PATH or reference it directly in your script.
+
+**Note**: Always ensure that the driver's version is compatible with your browser's version to avoid inconsistencies or errors.
+
 ## How to use
 1. **Choose Browser**: Set the `browser_choice` in the code to either "firefox" or "chrome".
 2. **Run the Script**: Execute the main function.
