@@ -43,6 +43,7 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 ## TODO
 - Enhance the message generation by adhering to Cialdini's principles of persuasion.
 - Provide clearer examples of the desired message output to ensure consistency in message generation.
+- Look more closely at https://github.com/bonigarcia/webdrivermanager/ for automated driver download
 
 ## Message Template Examples
 The tool is designed to produce messages that stand out. Here's an example of the format:
