@@ -50,6 +50,15 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 -     linkedin folder is asked for (good)
 -     want to activate script on profile (good)
 -       now; directly after this question, question of output language should be asked, without script scraping their profile first.
+-   Remember session in Selenium (different specific solution for FF and Chrome but same abstracted (log in once using new profile (to only have the cookies for LiR, save that profile, use that with Selenium, or something like that)
+-     Link to abstracted solution:
+-       https://www.reddit.com/r/learnpython/comments/76d3qf/remembering_a_device_when_logging_into_online/dod6n4k/
+-     Chrome:
+-       https://stackoverflow.com/questions/52394408/how-to-use-chrome-profile-in-selenium-webdriver-python-3
+-       https://www.educative.io/answers/how-to-use-a-specific-chrome-profile-in-python-selenium
+-     FF?
+-       
+- 
 
 
 ## Message Template Examples
