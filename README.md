@@ -44,6 +44,13 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 - Enhance the message generation by adhering to Cialdini's principles of persuasion.
 - Provide clearer examples of the desired message output to ensure consistency in message generation.
 - Look more closely at https://github.com/bonigarcia/webdrivermanager/ for automated driver download
+- Make so that all user input is asked first, then the output is presented.
+-   Currently:
+-     desc is asked for (good)
+-     linkedin folder is asked for (good)
+-     want to activate script on profile (good)
+-       now; directly after this question, question of output language should be asked, without script scraping their profile first.
+
 
 ## Message Template Examples
 The tool is designed to produce messages that stand out. Here's an example of the format:
