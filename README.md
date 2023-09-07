@@ -44,7 +44,7 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 - Enhance the message generation by adhering to Cialdini's principles of persuasion.
 - Provide clearer examples of the desired message output to ensure consistency in message generation.
 - Look more closely at https://github.com/bonigarcia/webdrivermanager/ for automated driver download
-
+-fix depreciation warning (ff). does it work afterwards?
 
 
 ## Message Template Examples
