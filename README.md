@@ -44,13 +44,7 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 - Enhance the message generation by adhering to Cialdini's principles of persuasion.
 - Provide clearer examples of the desired message output to ensure consistency in message generation.
 - Look more closely at https://github.com/bonigarcia/webdrivermanager/ for automated driver download
-- Make so that all user input is asked first, then the output is presented.
--   Currently:
--     desc is asked for (good)
--     linkedin folder is asked for (good)
--     want to activate script on profile (good)
--       now; directly after this question, question of output language should be asked, without script scraping their profile first.
--   Remember session in Selenium (different specific solution for FF and Chrome but same abstracted (log in once using new profile (to only have the cookies for LiR, save that profile, use that with Selenium, or something like that)
+- Remember session in Selenium (different specific solution for FF and Chrome but same abstracted (log in once using new profile (to only have the cookies for LiR, save that profile, use that with Selenium, or something like that)
 -     Link to abstracted solution:
 -       https://www.reddit.com/r/learnpython/comments/76d3qf/remembering_a_device_when_logging_into_online/dod6n4k/
 -     Chrome:
