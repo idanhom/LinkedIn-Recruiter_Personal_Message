@@ -5,6 +5,15 @@
 
 
 
+    #linkedin folder for test:
+    # https://www.linkedin.com/talent/hire/913959218/manage/all/profile/AEMAAB_1PmsBzg6HYQ2J_fKtV8eFRnWrVJTuc0A?project=913959218&trk=PROJECT_PIPELINE
+
+    #job description
+    #Sebratec is a Software and Engineering company specializing in services for the tech industry. We deliver expertise to our clients and help people to reach the next challenge in their careers. Our goal is to create a bridge between Sweden and Brazil, delivering both consulting, offshore, and in-house services. The company is growing and as a part of this, we are now looking for a skilled Android Developer for one of our clients! In your role, you will work with Android platform development (AOS) and customizing the operating system for the client's requirements. Would you like to work within a company that shares a startup mentality and a commitment to be a great workplace? Be a part of our Team! Who are you? You are social, open-minded, flexible, and thrive under challenging and changing conditions. As a person you are a curious, innovative, and analytical problem solver. You enjoy teamwork and have an inclusive approach to your work. You are not afraid to propose new ideas and promote them to the team. You deliver high-quality code and feel significant ownership of the code you produce. You are willing to cater to the complete lifecycle of the code. Mandatory requirements: 4+ years working with Software Development focusing on Android, Java, Kotlin, AOSP, and experience working with Android Platform development. Desired skills: CAN Architecture and GIT.
+    
+
+
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -33,13 +42,17 @@ def initialize_browser(agent_key="firefox"):
     user_agent = USER_AGENTS.get(agent_key, USER_AGENTS["firefox"])  # Default to Firefox if key not found
     
     if agent_key == "firefox":
+        profile_path = r"C:\Users\pson9\AppData\Roaming\Mozilla\Firefox\Profiles\8ewzfvju.SeleniumProfile"
         options = Options()
         options.set_preference("general.useragent.override", user_agent)
         options.set_preference("dom.webdriver.enabled", False)
         options.set_preference('useAutomationExtension', False)
+        options.profile = profile_path
         browser = webdriver.Firefox(options=options)
         # Hide selenium
         browser.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+
+
 
     elif agent_key == "chrome":
         options = ChromeOptions()
@@ -179,12 +192,7 @@ def get_output_language():
             print("Invalid choice. Please enter 's' for Swedish or 'e' for English.")
 
 
-def generate_message_with_chatgpt(api_key, job_description, candidate_info):
-    """
-    Send the extracted LinkedIn data to ChatGPT's API along with the job description to get the message.
-    Adjusted to accommodate language choice.
-    """
-    language = get_output_language()
+def generate_message_with_chatgpt(api_key, job_description, candidate_info, language):
 
     # Define the endpoint for the ChatGPT API
     endpoint = "https://api.openai.com/v1/chat/completions"
@@ -266,6 +274,7 @@ def open_notepad_with_message(message):
     subprocess.run(['notepad.exe', 'temp_message.txt'])
 
 
+# ... [The rest of the imports and functions remain unchanged]
 
 def main():
     # Set the browser choice in the code
@@ -283,6 +292,9 @@ def main():
     
     while True:
         if monitor_url_and_prompt(browser):
+            # Get the desired output language BEFORE scraping the profile
+            output_language = get_output_language()
+            
             print("Activating script...")
             
             # Expand LinkedIn sections
@@ -292,12 +304,13 @@ def main():
             candidate_info = extract_linkedin_details(browser)
             print(f"Processing profile of: {candidate_info['name']}")
             
-            # Generate message with the adjusted function
-            message = generate_message_with_chatgpt('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', job_description, candidate_info)
+            # Generate message with the adjusted function, using the previously selected output_language
+            message = generate_message_with_chatgpt('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', job_description, candidate_info, output_language)
 
             if message:
                 open_notepad_with_message(message)
 
 if __name__ == "__main__":
     main()
+
 
