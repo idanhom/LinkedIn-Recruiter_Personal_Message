@@ -42,7 +42,7 @@ def initialize_browser(agent_key="firefox"):
     user_agent = USER_AGENTS.get(agent_key, USER_AGENTS["firefox"])  # Default to Firefox if key not found
     
     if agent_key == "firefox":
-        profile_path = r"C:\Users\pson9\AppData\Roaming\Mozilla\Firefox\Profiles\8ewzfvju.SeleniumProfile"
+        profile_path = r"C:\Users\OscarPettersson\AppData\Roaming\Mozilla\Firefox\Profiles\8ewzfvju.SeleniumProfile"
         options = Options()
         options.set_preference("general.useragent.override", user_agent)
         options.set_preference("dom.webdriver.enabled", False)
@@ -317,7 +317,6 @@ def open_notepad_with_message(message):
     subprocess.run(['notepad.exe', 'temp_message.txt'])
 
 
-# ... [The rest of the imports and functions remain unchanged]
 
 def main():
     # Set the browser choice in the code
