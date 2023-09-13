@@ -1,0 +1,28 @@
+git pull 			  #get latest version from git (use at beginning to make sure you have latest online version)
+
+
+git checkout development/add  	  #switch branch
+
+
+git add .                         #prepare files
+git commit -m "reason for commit" #reason for commit
+git push			  #push to active branch
+
+
+
+git checkout -b nameForBranch
+
+----------
+
+
+
+git pull på main och development
+    #få senaste versionen för jag vill inte mergea gammal kod
+
+
+git checkout development
+    går in i development (vara i branchen jag vill mergea koden i (som ska uppdateras))
+
+
+git merge main
+    skriver branchen jag vill mergea till
