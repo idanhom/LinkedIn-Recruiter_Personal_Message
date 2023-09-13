@@ -45,7 +45,8 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 - Enhance the message generation by adhering to Cialdini's principles of persuasion.
 -add Title: Sebratec - Your Growth. Our Goal.
 - change message in chatgpt to:
-- "I am contacting you because we are hiring for a position that you have highly relevant expertise for."
+- "I am contacting you because we are hiring for a position that you seem to be highly qualified for. Check out the the job ad and if it looks interesting, I offer to pitch your profile directly to Troy, who is in charge of the recruitment process.
+- at the end: "How do you want to proceed, Mohan?"
 - after the output is printed, ask if "happy? otherwise, create another draft and output in another notepad document
 - Look more closely at https://github.com/bonigarcia/webdrivermanager/ for automated driver download
 -fix depreciation warning (ff). does it work afterwards?
