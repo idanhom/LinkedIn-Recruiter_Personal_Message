@@ -274,11 +274,12 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         "Your profile is very interesting because of your experience with [Insert one paragraph, around 2 short and impactful sentences detailing the candidate's most relevant expertise according to the job description. Base it on their {candidate_info['summary']} and/or {candidate_info['experiences']}. Make sure to also include their relevant technical skills, such as coding languages from their profile that fit the job description. Do not output any text that is not tailored to their profile. Prioritize being original to break free from the recruiter noise software developers receive on a daily basis.]"
 
         4. Call to Action:
-        "I am contacting you because we are hiring for a position that you have highly relevant expertise for. I'd be happy to pitch your profile directly to Troy, who is in charge of the recruitment process.
+        "I am contacting you because we are hiring for a position that you have highly relevant expertise for. I offer to pitch your profile directly to Troy, who is in charge of the recruitment process.
         Alternatively, if you know someone who might be a better fit for this role, feel free to pass this along to them."
 
         5. Outro:
         "You can find more information on our website: [link]
+        
         How do you want to proceed, {candidate_info['name']}?
         
         Do reply regardless,"
