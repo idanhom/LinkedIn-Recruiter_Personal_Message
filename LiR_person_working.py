@@ -215,8 +215,7 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         {' '.join([f"{exp['title']} på {exp['company']} under {exp['date']} med beskrivning: {exp['description']}" for exp in candidate_info['experiences']])}
 
         Generera ett meddelande som följer denna mall:
-
-        ***Title: Sebratec - Your Growth. Our Goal.
+                ***Title: Sebratec - Your Growth. Our Goal.
 
         0. Hej {candidate_info['name']},
 
@@ -240,9 +239,9 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         Svara gärna oavsett,"
 
 
-        *notering: ta bort alla citat-tecken från den färdiga texten*
-        **notering: behåll formatteringen enligt mallen, inklusive de olika radbrytningar.
-        ***notering: Behåll titeln utan förändring.
+        *notera: ta bort alla citattecken och rubriker, som "1. introduktion", "2. Företagspitch (Hook):", "3. Personligt meddelande:", "4. Call to Action:", "5. Outro:" från den slutliga textutmatningen*
+        **notera: behåll formateringen, med radbrytningar etc.
+        ***notera: behåll "Titel: Sebratec - Din tillväxt. Vårt mål." utan ändringar.
 
         
     """
@@ -284,11 +283,9 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         
         Do reply regardless,"
 
-        *note: remove all quotation marks from the final text output*
+        *note: remove all quotation marks and headers, such as "1. introduction", "2. Company Pitch (Hook):", "3. Personalized Message:", "4. Call to Action:", "5. Outro:" from the final text output*
         **note: keep the formatting, with line breaks etc.
-        ***note: keep the Title without change.
-
-
+        ***note: keep the "Title: Sebratec - Your Growth. Our Goal." without change.
         """
 
     messages = [
