@@ -218,13 +218,36 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
 
         Generera ett meddelande som följer denna mall:
 
-        "För att uppnå detta är vi intresserade av att tala med dig på grund av din erfarenhet med [Infoga en paragraf, cirka 2 korta och effektfulla meningar 
-        som beskriver kandidatens mest relevanta expertis enligt jobbbeskrivningen. Baserat på deras {candidate_info['summary']} och/eller {candidate_info['experiences']}.
-        Se till att också inkludera deras relevanta tekniska färdigheter, såsom kodningsspråk från deras profil som passar jobbbeskrivningen. 
-        Skriv inte ut någon text som inte är skräddarsydd för deras profil. Prioritera att vara original för att bryta fri från det rekryteringsbrus mjukvaruutvecklare får dagligen.]"
-        """
+        0. Hej {candidate_info['name']},
+
+        1. Introduktion:
+        "Hej, jag heter Oscar och jag jobbar på Sebratec."
+
+        2. Företagspitch (Hook):
+        "Vi specialiserar oss på att identifiera topptalang som inte bara letar efter ett jobb, utan en plats där de värderas och tas om hand. Vi värderar en snabb rekryteringsprocess utan onödiga extrasteg."
+
+        3. Personligt Meddelande:
+        "Jag pratar med dig på grund av din erfarenhet med [Infoga ett stycke, cirka 2 korta och slagkraftiga meningar som beskriver kandidatens mest relevanta expertis enligt jobbeskrivningen. Baserat på deras {candidate_info['summary']} och/eller {candidate_info['experiences']}. Se till att också inkludera deras relevanta tekniska färdigheter, såsom programmeringsspråk från deras profil som passar jobbeskrivningen. Skriv inte ut någon text som inte är skräddarsydd för deras profil. Prioritera att vara originell för att bryta igenom det brus som mjukvaruutvecklare får från rekryterare dagligen.]"
+
+        4. Uppmaning till handling:
+        "Låter det intressant?
+        Då presenterar jag gärna din profil direkt för Troy, som ansvarar för rekryteringsprocessen.
+        Alternativt, om du känner någon som kanske passar bättre för denna roll, tveka inte att vidarebefordra detta till dem."
+
+        5. Avslut:
+        "Du kan hitta mer information på vår webbplats: [link].
+        Vad tycker du att detta låter, {candidate_info['name']}?
+        Svara gärna oavsett,"
+
+
+        *notering: ta bort alla citat-tecken från den färdiga texten*
+        **note: behåll formatteringen enligt mallen, inklusive de olika radbrytningar.
+
+        
+    """
+        
     else:
-        prompt_text = f"""
+            prompt_text = f"""
         Given the job description:
         {job_description}
 
@@ -235,11 +258,31 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         {' '.join([f"{exp['title']} at {exp['company']} during {exp['date']} with description: {exp['description']}" for exp in candidate_info['experiences']])}
 
         Generate a message that follows this template:
-    
-        "To accomplish this, we're interested in speaking with you, because of your experience with [Insert one paragraph, around 2 short and impactful sentences 
-        detailing the candidate's most relevant expertise according to the job description. Base it on their {candidate_info['summary']} and/or {candidate_info['experiences']}.
-        Make sure to also include their relevant technical skills, such as coding languages from their profile that fit the job description. 
-        Do not output any text that is not tailored to their profile. Prioritize being original to break free from the recruiter noise software developers receive on a daily basis.]"
+
+	0. "Hi {candidate_info['name']}"
+
+        1. Introduction:
+        "Hi, I'm Oscar and I work at Sebratec."
+
+        2. Company Pitch (Hook):
+        "We specialize in identifying top-tier talent who are not just looking for a job, but a place where they are valued and cared for. We care about swift hiring processes, without unnecessary extra steps."
+
+        3. Personalized Message:
+        "I'm speaking with you, because of your experience with [Insert one paragraph, around 2 short and impactful sentences detailing the candidate's most relevant expertise according to the job description. Base it on their {candidate_info['summary']} and/or {candidate_info['experiences']}. Make sure to also include their relevant technical skills, such as coding languages from their profile that fit the job description. Do not output any text that is not tailored to their profile. Prioritize being original to break free from the recruiter noise software developers receive on a daily basis.]"
+
+        4. Call to Action:
+        "Sounds interesting? I'd be happy to pitch your profile directly to Troy, who is in charge of the recruitment process.
+        Alternatively, if you know someone who might be a better fit for this role, feel free to pass this along to them."
+
+        5. Outro:
+        "You can find more information on our website: [link].
+        How do you think this sounds {candidate_info['name']}?
+        Do reply regardless,"
+
+        *note: remove all quotation marks from the final text output*
+        **note: keep the formatting, with line breaks etc.
+
+
         """
 
     messages = [
