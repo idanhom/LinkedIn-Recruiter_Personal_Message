@@ -20,3 +20,70 @@ JavaScript warning: https://static.licdn.com/aero-v1/sc/h/9fcwfgv7lapgsaftq0nip5
 JavaScript error: , line 0: uncaught exception: Object
 JavaScript warning: https://static.licdn.com/aero-v1/sc/h/9fcwfgv7lapgsaftq0nip57hv, line 11864: unreachable code after return statement
 JavaScript warning: https://static.licdn.com/aero-v1/sc/h/9fcwfgv7lapgsaftq0nip57hv, line 11864: unreachable code after return statement
+1694610596509	geckodriver	INFO	Listening on 127.0.0.1:54534
+1694610603039	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54535" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\OSCARP~1\\AppData\\Local\\Temp\\rust_mozprofileoUCSEz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694610603690	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694610603786	Marionette	INFO	Listening on port 54545
+WebDriver BiDi listening on ws://127.0.0.1:54535
+Read port: 54545
+1694610604068	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54535/devtools/browser/8b3f9880-5ecf-48b6-ad50-aefd40aecaa9
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\OSCARP~1\AppData\Local\Temp\rust_mozprofileoUCSEz\thumbnails) because it does not exist
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/9fcwfgv7lapgsaftq0nip57hv, line 11864: unreachable code after return statement
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://player.vimeo.com/video/579574710?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479, line 117: unreachable code after return statement
+JavaScript warning: https://player.vimeo.com/video/579574710?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479, line 117: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: moz-extension://9a3d069d-c202-4471-8c74-8fd2aae6125b."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: moz-extension://9a3d069d-c202-4471-8c74-8fd2aae6125b."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: moz-extension://9a3d069d-c202-4471-8c74-8fd2aae6125b."
+1694610813772	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/9fcwfgv7lapgsaftq0nip57hv, line 11864: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/9fcwfgv7lapgsaftq0nip57hv, line 11864: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/9fcwfgv7lapgsaftq0nip57hv, line 11864: unreachable code after return statement
+JavaScript error: , line 0: NS_ERROR_FAILURE
+1694611570169	geckodriver	INFO	Listening on 127.0.0.1:54708
+1694611750934	geckodriver	INFO	Listening on 127.0.0.1:54723
+1694611756897	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54724" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\OSCARP~1\\AppData\\Local\\Temp\\rust_mozprofiletPqGeK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694611757520	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694611757614	Marionette	INFO	Listening on port 54733
+WebDriver BiDi listening on ws://127.0.0.1:54724
+Read port: 54733
+1694611757862	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54724/devtools/browser/11cf4aaf-e1ee-4fbf-ba99-1ba255a720c4
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\OSCARP~1\AppData\Local\Temp\rust_mozprofiletPqGeK\thumbnails) because it does not exist
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/9fcwfgv7lapgsaftq0nip57hv, line 11864: unreachable code after return statement
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1694611995205	Marionette	INFO	Stopped listening on port 54733
+Dynamically enable window occlusion 1
+1694612063214	geckodriver	INFO	Listening on 127.0.0.1:54809
+1694612068944	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54810" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\OSCARP~1\\AppData\\Local\\Temp\\rust_mozprofileuwWuC9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694612069545	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694612069634	Marionette	INFO	Listening on port 54820
+WebDriver BiDi listening on ws://127.0.0.1:54810
+Read port: 54820
+1694612069919	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54810/devtools/browser/e1dc2eca-a2ac-4fac-80ab-e5755b92d047
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\OSCARP~1\AppData\Local\Temp\rust_mozprofileuwWuC9\thumbnails) because it does not exist
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/9fcwfgv7lapgsaftq0nip57hv, line 11864: unreachable code after return statement
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/9fcwfgv7lapgsaftq0nip57hv, line 11864: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/9fcwfgv7lapgsaftq0nip57hv, line 11864: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/9fcwfgv7lapgsaftq0nip57hv, line 11864: unreachable code after return statement

@@ -287,6 +287,8 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         **note: keep the formatting, with line breaks etc.
         ***note: keep the "Title: Sebratec - Your Growth. Our Goal." without change.
         """
+            
+        #test
 
     messages = [
         {"role": "system", "content": "You are a recruiter reaching out to relevant tech talent on linkedin for a potential job match. Aim to break through the noise software recruiters get from linkedin recruiters."},
