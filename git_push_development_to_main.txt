@@ -1,0 +1,32 @@
+Merging and Pushing Changes from Development to Main:
+
+If you've made changes in the development branch and want to reflect those changes in the main branch, follow this step-by-step guide:
+
+1. Switch to the Main Branch:
+    Use the command git checkout main.
+
+    What it does: This switches your active branch to main.
+    Why: Before merging changes into main, you need to be on the main branch.
+
+2. Update the Main Branch:
+    Use the command git pull.
+
+    What it does: Fetches the latest changes from the remote main branch and updates your local main branch.
+    Why: It's essential to ensure your local main branch is up-to-date with any changes that might have been made by others before you merge your changes.
+
+3. Merge the Development Branch into Main:
+    Use the command git merge development.
+
+    What it does: This merges the changes from the development branch into your currently active main branch.
+    Why: To integrate the new changes or features you've added in development into the main branch.
+
+4. Push the Updated Main Branch to GitHub:
+    Use the command git push.
+
+    What it does: This uploads your updated main branch to GitHub.
+    Why: To ensure the main branch on GitHub reflects the latest changes you've just merged.
+    After completing these steps, the changes you made in the development branch will be present in the main branch on GitHub.
+
+Note: For solo projects or smaller collaborations, directly merging development into main can be sufficient. 
+However, for larger projects or when collaborating with a team, consider using Pull Requests on GitHub when merging into main. 
+This provides an opportunity for code review, discussions, and additional validation, ensuring the quality and stability of the code.
