@@ -35,16 +35,16 @@ Git Workflow for Feature Development
 
         Command: git checkout development
         Purpose: You're preparing to integrate your feature into the development branch.
+        
         Update the Development Branch Again:
-
         Command: git pull
         Purpose: Before merging your feature, ensure the development branch is up-to-date with the latest changes from the remote repository. This step reduces potential merge conflicts and ensures compatibility with the latest changes.
         Merge Your Feature into Development:
 
         Command: git merge feature-x
         Purpose: This integrates your new feature or fix into the development code.
+        
         Push the Updated Development Branch:
-
         Command: git push
         Purpose: Update the online version of your repository with your new feature or fix, making it available to all collaborators.
 
