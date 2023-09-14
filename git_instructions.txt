@@ -1,28 +1,73 @@
-git pull 			  #get latest version from git (use at beginning to make sure you have latest online version)
+Git Workflow for Feature Development
 
+-
+1. Starting a New Feature or Fix:
+    Switch to the Development Branch:
+        Command: git checkout development
+        Purpose: You want to base your new feature or fix on the latest development code.
 
-git checkout development/add  	  #switch branch
+    Update the Development Branch
+        Command: git pull
+        Purpose: Fetch the latest changes from the remote repository 
+        to ensure you're working with the most recent version of the development branch. 
+        This step is crucial to avoid potential merge conflicts later and to ensure compatibility with the latest changes.
 
+    Create a New Feature Branch:
+        Command: git checkout -b feature-x
+        Purpose: It's best practice to work on new features or fixes in separate branches. 
+        This ensures that the main and development branches remain unaffected until you're ready to integrate your changes.
 
-git add .                         #prepare files
-git commit -m "reason for commit" #reason for commit
-git push			  #push to active branch
+2. Working on Your Feature:
 
+    Make Code Changes: Implement your feature or fix in this new branch.
 
+    Stage Your Changes:
+        Command: git add .
+        Purpose: Before saving or committing your changes, you need to tell Git which changes you want to include. "Staging" is like preparing or selecting the changes you want to save. This command stages all your changes for commit.
 
-git checkout -b nameForBranch
+    Commit Your Changes:
+        Command: git commit -m "Implemented feature x"
+        Purpose: This saves or "commits" your staged changes, creating a snapshot of your code at this point. The message helps you (and others) understand the purpose of this snapshot later on.
 
-----------
+3. Merging Your Feature:
 
+    Switch Back to the Development Branch:
 
+        Command: git checkout development
+        Purpose: You're preparing to integrate your feature into the development branch.
+        
+        Update the Development Branch Again:
+        Command: git pull
+        Purpose: Before merging your feature, ensure the development branch is up-to-date with the latest changes from the remote repository. This step reduces potential merge conflicts and ensures compatibility with the latest changes.
+        Merge Your Feature into Development:
 
-git pull på main och development
-    #få senaste versionen för jag vill inte mergea gammal kod
+        Command: git merge feature-x
+        Purpose: This integrates your new feature or fix into the development code.
+        
+        Push the Updated Development Branch:
+        Command: git push
+        Purpose: Update the online version of your repository with your new feature or fix, making it available to all collaborators.
 
+4. Merging to Main:
 
-git checkout development
-    går in i development (vara i branchen jag vill mergea koden i (som ska uppdateras))
+    Switch to the Main Branch:
 
+        Command: git checkout main
+        Purpose: You're preparing to update the main branch with all the new changes from development.
+        Update the Main Branch:
 
-git merge main
-    skriver branchen jag vill mergea till
+        Command: git pull
+        Purpose: Ensure you're working with the most recent stable version of the main branch.
+        Merge Development into Main:
+
+        Command: git merge development
+        Purpose: This brings all the tested and approved changes from development into the main branch, ensuring that main is up-to-date with the latest stable code.
+        Push the Updated Main Branch:
+
+        Command: git push
+        Purpose: Update the online version of your repository with the latest stable code.
+
+5. Using Pull Requests (Optional but Recommended):
+    Instead of directly merging into development or main, consider pushing your feature branch to GitHub and opening a Pull Request (PR).
+    What is a PR?: A PR is a way to propose changes. It allows team members to review the code and discuss it before merging.
+    Why Use PRs?: PRs ensure that code is reviewed, which can catch mistakes, improve code quality, and share knowledge among the team.
