@@ -3,6 +3,11 @@
     #perhaps not all... but a few selected chosen ones...
     #also, provide examples of how i want the message to look like
 
+    #TODO
+    #MOST IMPORTANT THING:
+    #MAKE SURE I CAN SCRAPE FROM WORK HISTORY
+    #THEREAFTER:
+    #MAKE SURE I ONLY SEND THE PERSONALIZED MESSAGE (FIX TEMPLATE)
 
 
     #linkedin folder for test:
