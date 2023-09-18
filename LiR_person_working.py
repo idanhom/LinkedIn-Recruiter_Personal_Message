@@ -8,6 +8,7 @@
     #MAKE SURE I CAN SCRAPE FROM WORK HISTORY
     #THEREAFTER:
     #MAKE SURE I ONLY SEND THE PERSONALIZED MESSAGE (FIX TEMPLATE)
+    #this should only come to development
 
 
     #linkedin folder for test:
