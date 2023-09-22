@@ -3,9 +3,6 @@
     #perhaps not all... but a few selected chosen ones...
     #also, provide examples of how i want the message to look like
 
-
-
-
     #linkedin folder for test:
     # https://www.linkedin.com/talent/search/profile/AEMAACRLmGkBvbWWoxy97ZdGZs3_QMrmvfdtcVk?highlightedPatternSource=%255Cbaosp&searchContextId=703aadf7-a287-4015-b7f6-54304289277e&searchHistoryId=10466418464&searchKeyword=aosp%20&searchRequestId=cd4b32ea-2813-492e-bf67-9a2e2b398e12&start=0&trk=SEARCH_GLOBAL
 
