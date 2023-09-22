@@ -8,28 +8,34 @@
     #MAKE SURE I CAN SCRAPE FROM WORK HISTORY
     #THEREAFTER:
     #MAKE SURE I ONLY SEND THE PERSONALIZED MESSAGE (FIX TEMPLATE)
-    #this should only come to development
 
 
     #linkedin folder for test:
-    # https://www.linkedin.com/talent/hire/913959218/manage/all/profile/AEMAAB_1PmsBzg6HYQ2J_fKtV8eFRnWrVJTuc0A?project=913959218&trk=PROJECT_PIPELINE
+    # https://www.linkedin.com/talent/search/profile/AEMAACRLmGkBvbWWoxy97ZdGZs3_QMrmvfdtcVk?highlightedPatternSource=%255Cbaosp&searchContextId=703aadf7-a287-4015-b7f6-54304289277e&searchHistoryId=10466418464&searchKeyword=aosp%20&searchRequestId=cd4b32ea-2813-492e-bf67-9a2e2b398e12&start=0&trk=SEARCH_GLOBAL
 
     #job description
-    #Sebratec is a Software and Engineering company specializing in services for the tech industry. We deliver expertise to our clients and help people to reach the next challenge in their careers. Our goal is to create a bridge between Sweden and Brazil, delivering both consulting, offshore, and in-house services. The company is growing and as a part of this, we are now looking for a skilled Android Developer for one of our clients! In your role, you will work with Android platform development (AOS) and customizing the operating system for the client's requirements. Would you like to work within a company that shares a startup mentality and a commitment to be a great workplace? Be a part of our Team! Who are you? You are social, open-minded, flexible, and thrive under challenging and changing conditions. As a person you are a curious, innovative, and analytical problem solver. You enjoy teamwork and have an inclusive approach to your work. You are not afraid to propose new ideas and promote them to the team. You deliver high-quality code and feel significant ownership of the code you produce. You are willing to cater to the complete lifecycle of the code. Mandatory requirements: 4+ years working with Software Development focusing on Android, Java, Kotlin, AOSP, and experience working with Android Platform development. Desired skills: CAN Architecture and GIT.
-    
+    # The company is growing and as a part of this, we are now looking for a skilled Android Developer for one of our clients! In your role, you will work with Android platform development (AOS) and customizing the operating system for the client's requirements. Would you like to work within a company that shares a startup mentality and a commitment to be a great workplace? Be a part of our Team! Who are you? You are social, open-minded, flexible, and thrive under challenging and changing conditions. As a person you are a curious, innovative, and analytical problem solver. You enjoy teamwork and have an inclusive approach to your work. You are not afraid to propose new ideas and promote them to the team. You deliver high-quality code and feel significant ownership of the code you produce. You are willing to cater to the complete lifecycle of the code. Mandatory requirements: 4+ years working with Software Development focusing on Android, Java, Kotlin, AOSP, Experience working with Android Platform development. Desired skills: CAN Architecture, GIT. 
+
+    #pw: &aBd%YaHX4
 
 
-
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.firefox.options import Options
+# Standard library imports
 import time
 import requests
 import subprocess
+
+# Selenium related imports
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.chrome.webdriver import WebDriver as ChromeDriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException
+
+from bs4 import BeautifulSoup
+
 
 USER_AGENTS = {
     "firefox": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0",
@@ -48,8 +54,10 @@ def initialize_browser(agent_key="firefox"):
     user_agent = USER_AGENTS.get(agent_key, USER_AGENTS["firefox"])  # Default to Firefox if key not found
     
     if agent_key == "firefox":
-        profile_path = r"C:\Users\OscarPettersson\AppData\Roaming\Mozilla\Firefox\Profiles\8ewzfvju.SeleniumProfile"
-        options = Options()
+        profile_path = r"C:\Users\pson9\AppData\Roaming\Mozilla\Firefox\Profiles\8ewzfvju.SeleniumProfile"
+        #private profile:
+        # C:\Users\pson9\AppData\Roaming\Mozilla\Firefox\Profiles\8ewzfvju.SeleniumProfile
+        options = FirefoxOptions()
         options.set_preference("general.useragent.override", user_agent)
         options.set_preference("dom.webdriver.enabled", False)
         options.set_preference('useAutomationExtension', False)
@@ -111,28 +119,28 @@ def expand_linkedin_sections(browser):
         print("Couldn't find the 'See more of summary' button.")
         pass
 
-    # Continuously click "See more positions" until it no longer exists
-    while True:
-        try:
-            experience_button = browser.find_element(By.XPATH, "//button[@aria-label='See more positions']")
-            experience_button.click()
-            time.sleep(0.5)  # Wait for the content to expand
-        except NoSuchElementException:
-            break  # Exit the loop when the button is no longer found
-
     # Expand "Show all 42 skills"
     try:
         skills_button = browser.find_element(By.XPATH, "//button[contains(@aria-label, 'Show all') and contains(@class, 'expandable-list__button')]")
         skills_button.click()
         time.sleep(0.5)  # Wait for the content to expand
     except NoSuchElementException:
-        pass
+        print("Couldn't find the 'Show all skills' button.")
 
+    # Click "Show more" for experiences
+    try:
+        show_more_button = browser.find_element(By.XPATH, "//button[contains(@class, 'expandable-list__button') and @aria-label='See more positions']")
+        show_more_button.click()
+        time.sleep(2)  # wait for the content to expand
+    except NoSuchElementException:
+        print("Couldn't find the 'Show more' button.")
+
+    # Scroll down to the experience section to ensure all jobs are loaded. Adjust the range as needed.
+    for _ in range(3):
+        browser.execute_script("window.scrollBy(0, 800);")
+        time.sleep(2)  # wait for the page to load
 
 def extract_linkedin_details(browser):
-    """
-    Extract relevant details from the LinkedIn profile.
-    """
     details = {}
 
     # Extract name
@@ -144,44 +152,72 @@ def extract_linkedin_details(browser):
 
     # Extract summary
     try:
-        summary_element = browser.find_element(By.XPATH, "//blockquote[@data-test-summary-card-text]")
+        summary_element = browser.find_element(By.XPATH, "//blockquote[@data-test-summary-card-text]/div[@data-test-decorated-line-clamp]/div/span[@class='lt-line-clamp__raw-line']")
         details['summary'] = summary_element.text.strip()
     except NoSuchElementException:
         details['summary'] = 'N/A'
 
-    # Extract experience
+    # Extracting page source for BeautifulSoup
+    page_source = browser.page_source
+    soup = BeautifulSoup(page_source, 'html.parser')
+    
+    # Extract work history
     experiences = []
-    try:
-        experience_elements = browser.find_elements(By.XPATH, "//section[contains(@class, 'experience-section')]//ul/li")
-        for exp in experience_elements:
-            experience_data = {}
-            try:
-                experience_data['title'] = exp.find_element(By.TAG_NAME, "h3").text.strip()
-            except:
-                experience_data['title'] = 'N/A'
 
-            try:
-                experience_data['company'] = exp.find_element(By.TAG_NAME, "p").text.strip()
-            except:
-                experience_data['company'] = 'N/A'
-
-            try:
-                experience_data['date'] = exp.find_element(By.TAG_NAME, "h4").text.strip()
-            except:
-                experience_data['date'] = 'N/A'
-
-            try:
-                experience_data['description'] = exp.find_element(By.CLASS_NAME, "description").text.strip()
-            except:
-                experience_data['description'] = 'N/A'
-
-            experiences.append(experience_data)
-    except NoSuchElementException:
-        pass
-
+    # Find all job positions
+    positions = soup.find_all('div', class_='background-entity')
+    for position in positions:
+        job = {}
+        
+        # Extract job title
+        title_tag = position.find('h3', class_='background-entity__summary-definition--title')
+        job['Position Title'] = title_tag.a.text if title_tag and title_tag.a else "N/A"
+        
+        # Extract company name
+        company_tag = position.find('dd', class_='background-entity__summary-definition--subtitle')
+        job['Company Name'] = company_tag.a.text if company_tag and company_tag.a else "N/A"
+        
+        # Extract job description
+        description_tag = position.find('dd', class_='background-entity__summary-definition--description')
+        job['Summary'] = description_tag.text if description_tag else "N/A"
+        
+        # Extract employment duration
+        date_range_tag = position.find('span', class_='background-entity__date-range')
+        job['Dates Employed'] = date_range_tag.text if date_range_tag else "N/A"
+        
+        experiences.append(job)
+        
     details['experiences'] = experiences
 
+    # After extracting the name and summary
+    print(f"Name: {details['name'].strip()}")
+    print(f"Summary: {details['summary'].strip() if details['summary'] != 'N/A' else 'N/A'}")
+    
+    # After extracting experiences
+    if not details['experiences']:
+        print("No experiences found!")
+    else:
+        for exp in details['experiences']:
+            title = exp.get('Position Title', 'N/A').strip()
+            company = exp.get('Company Name', 'N/A').strip()
+            summary = exp.get('Summary', 'N/A').strip()
+            dates_employed = exp.get('Dates Employed', 'N/A').strip()
+            
+            if title == 'N/A' and company == 'N/A' and summary == 'N/A' and dates_employed == 'N/A':
+                continue  # Skip printing if all fields are 'N/A'
+            
+            print("\nExperience:")
+            print(f"  Position Title: {title if title else 'N/A'}")
+            print(f"  Company Name: {company if company else 'N/A'}")
+            print(f"  Dates Employed: {dates_employed if dates_employed else 'N/A'}")
+            print(f"  Summary: {summary if summary else 'N/A'}")
+    
     return details
+
+
+
+
+
 
 def get_output_language():
     """
@@ -218,7 +254,9 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         {candidate_info['summary']}
         
         Och erfarenheter: 
-        {' '.join([f"{exp['title']} på {exp['company']} under {exp['date']} med beskrivning: {exp['description']}" for exp in candidate_info['experiences']])}
+        {' '.join([f"{exp['Position Title']} på {exp['Company Name']} under {exp['Dates Employed']}" for exp in candidate_info['experiences']])}
+
+
 
         Generera ett meddelande som följer denna mall:
                 ***Title: Sebratec - Your Growth. Our Goal.
@@ -261,7 +299,7 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         {candidate_info['summary']}
         
         And experiences: 
-        {' '.join([f"{exp['title']} at {exp['company']} during {exp['date']} with description: {exp['description']}" for exp in candidate_info['experiences']])}
+        {' '.join([f"{exp['Position Title']} at {exp['Company Name']} during {exp['Dates Employed']}" for exp in candidate_info['experiences']])}
 
         Generate a message that follows this template:
 
@@ -289,9 +327,9 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         
         Do reply regardless,"
 
-        *note: remove all quotation marks and headers, such as "1. introduction", "2. Company Pitch (Hook):", "3. Personalized Message:", "4. Call to Action:", "5. Outro:" from the final text output*
-        **note: keep the formatting, with line breaks etc.
-        ***note: keep the "Title: Sebratec - Your Growth. Our Goal." without change.
+        *note 1: remove all citation marks and headers, such as "1. Introduction", "2. Company Pitch (Hook):", "3. Personalized Message:", "4. Call to Action:", "5. Outro:" from the final block of text.
+        note 2: keep the formatting, with line breaks etc.
+        note 3: keep the "Title: Sebratec - Your Growth. Our Goal." without change. 
         """
 
 
@@ -361,6 +399,8 @@ def main():
 
             if message:
                 open_notepad_with_message(message)
+                browser.switch_to.window(browser.current_window_handle)
+
 
 if __name__ == "__main__":
     main()
