@@ -1,15 +1,3 @@
-Hej Zouhour KHEDHER,
+Title: Sebratec - Your Growth. Our Goal.
 
-Hej, jag heter Oscar och jag jobbar på Sebratec. Vi specialiserar oss på att identifiera topptalang som inte bara letar efter ett jobb, utan en plats där de värderas och tas om hand. Vi värderar en snabb rekryteringsprocess utan onödiga extrasteg.
-
-Jag pratar med dig på grund av din omfattande erfarenhet som Android-utvecklare. Jag ser att du har en stark bakgrund inom inbyggd mjukvaruutveckling och i synnerhet med Software Development-fokus på Android, Java, Kotlin, AOSP. Din pågående tjänstgöring som Embedded Software Engineer (AOSP) på Volvo Cars och MCA Sweden samt tidigare erfarenheter hos Sagemcom och Sofia Technologies visar att du har djup förståelse för Android plattformsutveckling. Jag märker att du även har erfarenhet med verktyg som GIT, vilket är en färdighet vi söker efter.
-
-Jag kontaktar dig då vi anställer för en position som du har väldigt relevant erfarenhet inom. Låter detta intressant presenterar jag gärna din profil direkt för Troy, som ansvarar för rekryteringsprocessen. Alternativt, om du känner någon som kanske passar bättre för denna roll, tveka inte att vidarebefordra detta till dem.
-
-Du kan hitta mer information på vår webbplats: [link].
-Hur vill du gå vidare, Zouhour KHEDHER?
-
-Svara gärna oavsett,
-
-Oscar,
-Sebratec - Ditt tillväxt. Vårt mål.
+Hi Zouhour, I noticed your extensive work with AOSP at Volvo Cars and MCA Sweden. Your contributions in the realm of embedded software, particularly with Android platform development, align perfectly with an exciting Android Developer role we have at Sebratec. Our company thrives on the start-up spirit and seeks professionals like you, who have a proven track record of innovation and quality delivery. We are quite selective with who we reach out to, and your profile stood out as not merely fitting but potentially contributing innovatively to our team. Let's explore if we could be each other's next big step.
