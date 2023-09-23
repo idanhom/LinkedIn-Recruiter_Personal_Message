@@ -72,12 +72,11 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         ***Title: Sebratec - Your Growth. Our Goal.
 
         1. Personalized Message:
-        "Your profile is very interesting because of your experience with [Craft a succinct, compelling, and original message for [Candidate Name]. Highlight their unique experience in [Specific Experience or Skill from LinkedIn] and their impactful contributions at [Previous Company/Role from LinkedIn], tying these to the unique requirements of the [Job Title] role at [Your Company]. Invoke curiosity and convey a sense of exclusivity by subtly referencing the unique and influential aspects of the role and our selective outreach. Ensure the message stands out, is personalized, and makes the candidate feel particularly valued and intrigued to learn more. Consider subtle integration of principles of Commitment and Consistency, Social Proof, and Scarcity where applicable, to enhance engagement and response rate.]
-
+        "Your profile is very interesting because of your experience with [Craft a succinct, compelling, and original message for [Candidate Name]. Highlight their unique experience in [Specific Experience or Skill from LinkedIn] and their impactful contributions at [Previous Company/Role from LinkedIn], tying these to the unique requirements of the [Job Title] role at [Your Company]. Invoke curiosity and convey a sense of exclusivity by subtly referencing the unique and influential aspects of the role and our selective outreach. Ensure the message stands out, is personalized, and makes the candidate feel particularly valued and intrigued to learn more. Prioritize their experiences that best matches the job requirement (preferrably their most recent experiences). Consider subtle integration of  Robert Cialdinis' principles of Commitment and Consistency, Social Proof, and Scarcity where applicable, to enhance engagement and response rate.]
 
         note 1: remove all citation marks and headers, such as "3. Personalized Message:" from the final block of text.
-        note 2: keep the personalized message to 1 paragraph and max 4 sentences.
-        note 3: keep the formatting, with line breaks etc.
+        note 2: create two versions using the same job description and scraped data. separate them by header "Version 1" and "Version 2"
+        note 3: keep the personalized message to 1 paragraph and max 4 sentences.
         """
 
 
