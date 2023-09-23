@@ -71,31 +71,13 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
 
         ***Title: Sebratec - Your Growth. Our Goal.
 
-	    0. "Hi {candidate_info['name']}"
-    
-        1. Introduction:
-        "Hi, I'm Oscar and I work at Sebratec."
+        1. Personalized Message:
+        "Your profile is very interesting because of your experience with [Craft a succinct, compelling, and original message for [Candidate Name]. Highlight their unique experience in [Specific Experience or Skill from LinkedIn] and their impactful contributions at [Previous Company/Role from LinkedIn], tying these to the unique requirements of the [Job Title] role at [Your Company]. Invoke curiosity and convey a sense of exclusivity by subtly referencing the unique and influential aspects of the role and our selective outreach. Ensure the message stands out, is personalized, and makes the candidate feel particularly valued and intrigued to learn more. Consider subtle integration of principles of Commitment and Consistency, Social Proof, and Scarcity where applicable, to enhance engagement and response rate.]
 
-        2. Company Pitch (Hook):
-        "We specialize in identifying top-tier talent who are not just looking for a job, but a place where they are valued and cared for. We care about swift hiring processes, without unnecessary extra steps."
 
-        3. Personalized Message:
-        "Your profile is very interesting because of your experience with [Insert one paragraph, around 2 short and impactful sentences detailing the candidate's most relevant expertise according to the job description. Base it on their {candidate_info['summary']} and/or {candidate_info['experiences']}. Make sure to also include their relevant technical skills, such as coding languages from their profile that fit the job description. Do not output any text that is not tailored to their profile. Prioritize being original to break free from the recruiter noise software developers receive on a daily basis.]"
-
-        4. Call to Action:
-        "I am contacting you because we are hiring for a position that you have highly relevant expertise for. I offer to pitch your profile directly to Troy, who is in charge of the recruitment process.
-        Alternatively, if you know someone who might be a better fit for this role, feel free to pass this along to them."
-
-        5. Outro:
-        "You can find more information on our website: [link]
-        
-        How do you want to proceed, {candidate_info['name']}?
-        
-        Do reply regardless,"
-
-        *note 1: remove all citation marks and headers, such as "1. Introduction", "2. Company Pitch (Hook):", "3. Personalized Message:", "4. Call to Action:", "5. Outro:" from the final block of text.
-        note 2: keep the formatting, with line breaks etc.
-        note 3: keep the "Title: Sebratec - Your Growth. Our Goal." without change. 
+        note 1: remove all citation marks and headers, such as "3. Personalized Message:" from the final block of text.
+        note 2: keep the personalized message to 1 paragraph and max 4 sentences.
+        note 3: keep the formatting, with line breaks etc.
         """
 
 
