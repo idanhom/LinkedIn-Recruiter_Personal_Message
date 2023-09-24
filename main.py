@@ -1,7 +1,5 @@
 #TODO
-    #make so that message adheres to Cialdini's principles of persuation
-    #perhaps not all... but a few selected chosen ones...
-    #also, provide examples of how i want the message to look like
+    #make so provides two versions in the same document.
 
     #linkedin folder for test:
     # https://www.linkedin.com/talent/search/profile/AEMAACRLmGkBvbWWoxy97ZdGZs3_QMrmvfdtcVk?highlightedPatternSource=%255Cbaosp&searchContextId=703aadf7-a287-4015-b7f6-54304289277e&searchHistoryId=10466418464&searchKeyword=aosp%20&searchRequestId=cd4b32ea-2813-492e-bf67-9a2e2b398e12&start=0&trk=SEARCH_GLOBAL
@@ -13,7 +11,6 @@
 
 
 
-import time
 from web_scraping import initialize_browser, expand_linkedin_sections, extract_linkedin_details
 from user_interaction import monitor_url_and_prompt, get_output_language, open_notepad_with_message
 from api_interaction import generate_message_with_chatgpt
@@ -44,7 +41,7 @@ def main():
             
             # Extract candidate information
             candidate_info = extract_linkedin_details(browser)
-            print(f"Processing profile of: {candidate_info['name']}")
+            print(f"\nProcessing profile of: {candidate_info['name']}")
             
             # Generate message with the adjusted function, using the previously selected output_language
             message = generate_message_with_chatgpt('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', job_description, candidate_info, output_language)
@@ -52,6 +49,9 @@ def main():
             if message:
                 open_notepad_with_message(message)
                 browser.switch_to.window(browser.current_window_handle)
+            
+            print("\nwaiting for new profile to process...")
+
 
 
 if __name__ == "__main__":
