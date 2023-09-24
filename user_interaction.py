@@ -2,6 +2,7 @@ import subprocess
 import time
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
+import tkinter as tk
 
 
 
@@ -40,6 +41,23 @@ def get_output_language():
             return 'english'
         else:
             print("Invalid choice. Please enter 's' for Swedish or 'e' for English.")
+
+
+def open_independent_message_window(message, candidate_name):
+    root = tk.Tk()
+    root.title(f"Message for: {candidate_name}")
+    
+    text_widget = tk.Text(root, wrap=tk.WORD)
+    text_widget.insert(tk.INSERT, message)
+    text_widget.pack(expand=True, fill=tk.BOTH)
+    
+    # Set the initial window size
+    root.geometry("430x500")  # width x height
+    
+    root.bind('<Escape>', lambda event: root.destroy())
+    root.mainloop()
+
+
 
 
 def open_notepad_with_message(message):
