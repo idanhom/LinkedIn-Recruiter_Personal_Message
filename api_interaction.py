@@ -22,39 +22,24 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         Och erfarenheter: 
         {' '.join([f"{exp['Position Title']} på {exp['Company Name']} under {exp['Dates Employed']}" for exp in candidate_info['experiences']])}
 
-
-
-        Generera ett meddelande som följer denna mall:
-                ***Title: Sebratec - Your Growth. Our Goal.
-
-        0. Hej {candidate_info['name']},
-
-        1. Introduktion:
-        "Hej, jag heter Oscar och jag jobbar på Sebratec."
-
-        2. Företagspitch (Hook):
-        "Vi specialiserar oss på att identifiera topptalang som inte bara letar efter ett jobb, utan en plats där de värderas och tas om hand. Vi värderar en snabb rekryteringsprocess utan onödiga extrasteg."
-
-        3. Personligt Meddelande:
-        "Jag pratar med dig på grund av din erfarenhet med [Infoga ett stycke, cirka 2 korta och slagkraftiga meningar som beskriver kandidatens mest relevanta expertis enligt jobbeskrivningen. Baserat på deras {candidate_info['summary']} och/eller {candidate_info['experiences']}. Se till att också inkludera deras relevanta tekniska färdigheter, såsom programmeringsspråk från deras profil som passar jobbeskrivningen. Skriv inte ut någon text som inte är skräddarsydd för deras profil. Prioritera att vara originell för att bryta igenom det brus som mjukvaruutvecklare får från rekryterare dagligen.]"
-
-        4. Uppmaning till handling:
-        "Jag kontaktar dig då vi anställer för en position som du har väldigt relevant erfarenhet inom. Låter detta intressant presenterar jag gärna din profil direkt för Troy, som ansvarar för rekryteringsprocessen.
-        Alternativt, om du känner någon som kanske passar bättre för denna roll, tveka inte att vidarebefordra detta till dem."
-
-        5. Avslut:
-        "Du kan hitta mer information på vår webbplats: [link].
-        Hur vill du gå vidare, {candidate_info['name']}?
+        1. Personligt meddelande:
+        "Din profil är mycket intressant på grund av din erfarenhet av [Skapa ett kortfattat, övertygande och originellt meddelande för [Kandidatens namn]. Lyft fram deras unika erfarenhet av [specifik erfarenhet eller färdighet från LinkedIn] och deras betydelsefulla bidrag på [tidigare företag/roll från LinkedIn] och koppla dessa till de unika kraven för rollen [jobbtitel] på [ditt företag]. Väck nyfikenhet och förmedla en känsla av exklusivitet genom att subtilt hänvisa till de unika och inflytelserika aspekterna av rollen och vår selektiva uppsökande verksamhet. Se till att budskapet sticker ut, är personligt och får kandidaten att känna sig särskilt uppskattad och nyfiken på att lära sig mer. Prioritera deras erfarenheter som bäst matchar jobbkraven (helst deras senaste erfarenheter). Överväg en subtil integrering av Robert Cialdinis principer om engagemang och konsekvens, sociala bevis och knapphet där det är tillämpligt, för att öka engagemanget och svarsfrekvensen].
         
-        Svara gärna oavsett,"
+        Vänligen generera ett personligt meddelande enligt dessa riktlinjer:
+        - Meddelandet ska vara övertygande och originellt och lyfta fram {candidate_info['name']}:s unika erfarenheter och bidrag, särskilt de som stämmer överens med jobbkraven.
+        - Meddelandet ska väcka nyfikenhet och förmedla en känsla av exklusivitet, med hänvisning till de unika aspekterna av rollen och vår selektiva uppsökande verksamhet.
+        - Meddelandet ska skrivas i första person, med ett språk på åttonde klassnivå och med vanliga ord och fraser.
+        - Integrera subtilt Robert Cialdinis principer om engagemang och konsekvens, sociala bevis och knapphet för att öka engagemanget och svarsfrekvensen.
+        - Håll budskapet till ett stycke och max 4 meningar.
 
-
-        *notera: ta bort alla citattecken och rubriker, som "1. introduktion", "2. Företagspitch (Hook):", "3. Personligt meddelande:", "4. Call to Action:", "5. Outro:" från den slutliga textutmatningen*
-        **notera: behåll formateringen, med radbrytningar etc.
-        ***notera: behåll "Titel: Sebratec - Din tillväxt. Vårt mål." utan ändringar.
-
+        Skapa två versioner av meddelandet och märk dem med "Version 1" och "Version 2". 
+        Börja alltid texten med: Din profil är mycket intressant på grund av din erfarenhet av...
+        Använda inga citattecken och apostrofer i den färdiga texten.
         
-    """
+        Det är viktigt att all text du formulerar är på svenska.
+
+
+        """
         
     else:
             prompt_text = f"""
@@ -67,21 +52,22 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         And experiences: 
         {' '.join([f"{exp['Position Title']} at {exp['Company Name']} during {exp['Dates Employed']}" for exp in candidate_info['experiences']])}
 
-        Generate a message that follows this template:
+        Please generate a personalized message following these guidelines:
+        - The message should be compelling and original, highlighting the unique experiences and contributions of {candidate_info['name']}, particularly those that align with the job requirements.
+        - The message should invoke curiosity and convey a sense of exclusivity, referencing the unique aspects of the role and our selective outreach.
+        - The message should be written in first person, using 8th-grade level language and regular words and phrases.
+        - Integrate subtly Robert Cialdini's principles of Commitment and Consistency, Social Proof, and Scarcity to enhance engagement and response rate.
+        - Keep the message to one paragraph and a maximum of 4 sentences.
 
-        ***Title: Sebratec - Your Growth. Our Goal.
+        Create two versions of the message and label them as 'Version 1' and 'Version 2'. 
+        Remove all citation marks and apostrophes.
+        Start the message with: "Your profile is very interesting because of your experience with"
 
-        1. Personalized Message:
-        "Your profile is very interesting because of your experience with [Craft a succinct, compelling, and original message for [Candidate Name]. Highlight their unique experience in [Specific Experience or Skill from LinkedIn] and their impactful contributions at [Previous Company/Role from LinkedIn], tying these to the unique requirements of the [Job Title] role at [Your Company]. Invoke curiosity and convey a sense of exclusivity by subtly referencing the unique and influential aspects of the role and our selective outreach. Ensure the message stands out, is personalized, and makes the candidate feel particularly valued and intrigued to learn more. Prioritize their experiences that best matches the job requirement (preferrably their most recent experiences). Consider subtle integration of  Robert Cialdinis' principles of Commitment and Consistency, Social Proof, and Scarcity where applicable, to enhance engagement and response rate.]
-
-        note 1: remove all citation marks and headers, such as "3. Personalized Message:" from the final block of text.
-        note 2: create two versions using the same job description and scraped data. separate them by header "Version 1" and "Version 2"
-        note 3: keep the personalized message to 1 paragraph and max 4 sentences.
         """
 
 
     messages = [
-        {"role": "system", "content": "You are a recruiter reaching out to relevant tech talent on linkedin for a potential job match. Aim to break through the noise software recruiters get from linkedin recruiters."},
+        {"role": "system", "content": "You are a recruiter composing a message to approach potential candidates on LinkedIn for a job match. Use relevant details from the candidates profile that match the job requirement and ensure the message is personalized, making the candidate feel valued and intrigued to learn more."},
         {"role": "user", "content": prompt_text}
     ]
 

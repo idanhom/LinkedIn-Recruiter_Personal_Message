@@ -22,7 +22,7 @@ def monitor_url_and_prompt(browser):
             except NoSuchElementException:
                 candidate_name = 'Unknown Profile'
 
-            decision = input(f"URL changed to profile of {candidate_name}. Do you want to activate the script on this profile? (y/n): ")
+            decision = input(f"URL changed to profile of {candidate_name}. \nActivate on this profile? (y/n): ")
             if decision.lower() == 'y':
                 return True
         time.sleep(2)  # Check every 2 seconds
