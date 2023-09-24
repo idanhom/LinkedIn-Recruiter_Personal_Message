@@ -1343,3 +1343,302 @@ Ze@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:687:142
 
 1695533960674	Marionette	INFO	Stopped listening on port 51716
 Dynamically enable window occlusion 1
+1695545704872	geckodriver	INFO	Listening on 127.0.0.1:61140
+1695545709310	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61141" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pson9\\AppData\\Local\\Temp\\rust_mozprofileMO0R20"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695545710349	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695545710401	Marionette	INFO	Listening on port 61151
+Read port: 61151
+WebDriver BiDi listening on ws://127.0.0.1:61141
+1695545710476	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61141/devtools/browser/e6dfebba-e746-491d-909d-a1449c2468ec
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\pson9\AppData\Local\Temp\rust_mozprofileMO0R20\thumbnails) because it does not exist
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+1695546459979	geckodriver	INFO	Listening on 127.0.0.1:61258
+1695546464291	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61259" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pson9\\AppData\\Local\\Temp\\rust_mozprofile9SqPKp"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695546465355	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695546465407	Marionette	INFO	Listening on port 61270
+WebDriver BiDi listening on ws://127.0.0.1:61259
+Read port: 61270
+1695546465609	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61259/devtools/browser/996716ba-4001-4e08-b725-04490c47723e
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\pson9\AppData\Local\Temp\rust_mozprofile9SqPKp\thumbnails) because it does not exist
+1695546772859	geckodriver	INFO	Listening on 127.0.0.1:61317
+1695546777182	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61318" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pson9\\AppData\\Local\\Temp\\rust_mozprofile2dij8b"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695546778298	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695546778345	Marionette	INFO	Listening on port 61328
+WebDriver BiDi listening on ws://127.0.0.1:61318
+Read port: 61328
+1695546778506	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61318/devtools/browser/80f17e26-f057-4c62-afe2-4a048dc44510
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: https://platform.linkedin.com/litms/vendor/qualtrics/v1.64.0/OrchestratorMain.js, line 16: Error: Loading chunk 4 failed.
+(error: https://platform.linkedin.com/litms/vendor/qualtrics/v1.64.0/4.5c4fce86ab162253c8a6.chunk.js?Q_CLIENTVERSION=1.64.0&Q_CLIENTTYPE=hostedjs&Q_BRANDID=linkedinresearch)
+JavaScript error: https://platform.linkedin.com/litms/vendor/qualtrics/v1.64.0/OrchestratorMain.js, line 16: Error: Loading chunk 1 failed.
+(error: https://platform.linkedin.com/litms/vendor/qualtrics/v1.64.0/1.3339a439804624bd9c5c.chunk.js?Q_CLIENTVERSION=1.64.0&Q_CLIENTTYPE=hostedjs&Q_BRANDID=linkedinresearch)
+JavaScript error: resource://gre/actors/ContentMetaChild.sys.mjs, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\pson9\AppData\Local\Temp\rust_mozprofile2dij8b\thumbnails) because it does not exist
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8, line 686: Script terminated by timeout at:
+emit@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:686:263
+Ze@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:687:142
+
+1695546983422	Marionette	INFO	Stopped listening on port 61328
+Dynamically enable window occlusion 1
+1695547008960	geckodriver	INFO	Listening on 127.0.0.1:61368
+1695547013411	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61369" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pson9\\AppData\\Local\\Temp\\rust_mozprofilez6PUNK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695547014376	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695547014429	Marionette	INFO	Listening on port 61380
+WebDriver BiDi listening on ws://127.0.0.1:61369
+Read port: 61380
+1695547014620	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61369/devtools/browser/20a32800-4d10-43d0-b707-8f9fb0a8ee8d
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.sys.mjs, line 111: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.sys.mjs, line 111: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.sys.mjs, line 168: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.sys.mjs" line: 111}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.sys.mjs" line: 111}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: https://platform.linkedin.com/litms/vendor/qualtrics/v1.64.0/OrchestratorMain.js, line 16: Error: Loading chunk 1 failed.
+(error: https://platform.linkedin.com/litms/vendor/qualtrics/v1.64.0/1.3339a439804624bd9c5c.chunk.js?Q_CLIENTVERSION=1.64.0&Q_CLIENTTYPE=hostedjs&Q_BRANDID=linkedinresearch)
+JavaScript error: https://platform.linkedin.com/litms/vendor/qualtrics/v1.64.0/OrchestratorMain.js, line 16: Error: Loading chunk 4 failed.
+(error: https://platform.linkedin.com/litms/vendor/qualtrics/v1.64.0/4.5c4fce86ab162253c8a6.chunk.js?Q_CLIENTVERSION=1.64.0&Q_CLIENTTYPE=hostedjs&Q_BRANDID=linkedinresearch)
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\pson9\AppData\Local\Temp\rust_mozprofilez6PUNK\thumbnails) because it does not exist
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8, line 686: Script terminated by timeout at:
+emit@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:686:263
+Ze@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:687:142
+
+1695547144653	Marionette	INFO	Stopped listening on port 61380
+Dynamically enable window occlusion 1
+1695547194299	geckodriver	INFO	Listening on 127.0.0.1:61436
+1695547198656	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61437" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pson9\\AppData\\Local\\Temp\\rust_mozprofileHfjkWz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695547199617	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695547199668	Marionette	INFO	Listening on port 61447
+WebDriver BiDi listening on ws://127.0.0.1:61437
+Read port: 61447
+1695547199857	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61437/devtools/browser/5818e627-19f7-492f-bb34-fdf3d73999ac
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\pson9\AppData\Local\Temp\rust_mozprofileHfjkWz\thumbnails) because it does not exist
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8, line 686: Script terminated by timeout at:
+emit@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:686:263
+Ze@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:687:142
+
+1695547293051	Marionette	INFO	Stopped listening on port 61447
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1695547293137	WebDriver BiDi	ERROR	Failed to stop protocol: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.sys.mjs :: allowAllCerts.disable :: line 51"  data: no] Stack trace: allowAllCerts.disable()@cert.sys.mjs:51
+destroy()@Session.sys.mjs:215
+deleteSession()@WebDriverBiDi.sys.mjs:140
+stop()@WebDriverBiDi.sys.mjs:228
+1695547344493	geckodriver	INFO	Listening on 127.0.0.1:61492
+1695547348750	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61493" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pson9\\AppData\\Local\\Temp\\rust_mozprofile9mlnTd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695547349802	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695547349870	Marionette	INFO	Listening on port 61503
+Read port: 61503
+WebDriver BiDi listening on ws://127.0.0.1:61493
+1695547349950	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61493/devtools/browser/33e6ee2c-aa98-48d6-8961-6feb2880cdfc
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\pson9\AppData\Local\Temp\rust_mozprofile9mlnTd\thumbnails) because it does not exist
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8, line 686: Script terminated by timeout at:
+emit@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:686:263
+Ze@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:687:142
+
+1695547439925	Marionette	INFO	Stopped listening on port 61503
+Dynamically enable window occlusion 1
+1695547470820	geckodriver	INFO	Listening on 127.0.0.1:61545
+1695547475282	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61546" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pson9\\AppData\\Local\\Temp\\rust_mozprofilesH6suu"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695547476415	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695547476464	Marionette	INFO	Listening on port 61556
+WebDriver BiDi listening on ws://127.0.0.1:61546
+Read port: 61556
+1695547476616	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61546/devtools/browser/c80ef1f7-e503-4f15-986a-6ed369726fa5
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\pson9\AppData\Local\Temp\rust_mozprofilesH6suu\thumbnails) because it does not exist
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8, line 686: Script terminated by timeout at:
+emit@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:686:263
+Ze@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:687:142
+
+1695547993710	Marionette	INFO	Stopped listening on port 61556
+Dynamically enable window occlusion 1
+1695548004371	geckodriver	INFO	Listening on 127.0.0.1:61658
+1695548008728	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61659" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pson9\\AppData\\Local\\Temp\\rust_mozprofileKgOkdf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695548009858	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695548009911	Marionette	INFO	Listening on port 61672
+WebDriver BiDi listening on ws://127.0.0.1:61659
+Read port: 61672
+1695548010080	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61659/devtools/browser/bc920961-c78f-45e6-8e11-44dbc55be05b
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\pson9\AppData\Local\Temp\rust_mozprofileKgOkdf\thumbnails) because it does not exist
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8, line 686: Script terminated by timeout at:
+emit@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:686:263
+Ze@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:687:142
+
+1695548123393	Marionette	INFO	Stopped listening on port 61672
+Dynamically enable window occlusion 1
+1695548133013	geckodriver	INFO	Listening on 127.0.0.1:61716
+1695548137403	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61717" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pson9\\AppData\\Local\\Temp\\rust_mozprofileD9s8gJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695548138468	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695548138517	Marionette	INFO	Listening on port 61727
+WebDriver BiDi listening on ws://127.0.0.1:61717
+Read port: 61727
+1695548138709	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61717/devtools/browser/ecb6e30b-da73-42c1-81fe-cd57f4655736
+1695548152367	Marionette	INFO	Stopped listening on port 61727
+Dynamically enable window occlusion 1
+1695548160379	geckodriver	INFO	Listening on 127.0.0.1:61738
+1695548164832	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61739" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pson9\\AppData\\Local\\Temp\\rust_mozprofileJBaXxW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695548165854	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695548165916	Marionette	INFO	Listening on port 61750
+WebDriver BiDi listening on ws://127.0.0.1:61739
+Read port: 61750
+1695548166151	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61739/devtools/browser/4f0198ab-76bc-4bdf-919d-efb141950a39
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.sys.mjs, line 111: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.sys.mjs, line 111: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.sys.mjs, line 168: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.sys.mjs" line: 111}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.sys.mjs" line: 111}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: https://platform.linkedin.com/litms/vendor/qualtrics/v1.64.0/OrchestratorMain.js, line 16: Error: Loading chunk 1 failed.
+(error: https://platform.linkedin.com/litms/vendor/qualtrics/v1.64.0/1.3339a439804624bd9c5c.chunk.js?Q_CLIENTVERSION=1.64.0&Q_CLIENTTYPE=hostedjs&Q_BRANDID=linkedinresearch)
+JavaScript error: https://platform.linkedin.com/litms/vendor/qualtrics/v1.64.0/OrchestratorMain.js, line 16: Error: Loading chunk 4 failed.
+(error: https://platform.linkedin.com/litms/vendor/qualtrics/v1.64.0/4.5c4fce86ab162253c8a6.chunk.js?Q_CLIENTVERSION=1.64.0&Q_CLIENTTYPE=hostedjs&Q_BRANDID=linkedinresearch)
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\pson9\AppData\Local\Temp\rust_mozprofileJBaXxW\thumbnails) because it does not exist
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8, line 686: Script terminated by timeout at:
+emit@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:686:263
+Ze@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:687:142
+
+1695548270610	Marionette	INFO	Stopped listening on port 61750
+Dynamically enable window occlusion 1
+1695548277865	geckodriver	INFO	Listening on 127.0.0.1:61789
+1695548282157	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61790" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pson9\\AppData\\Local\\Temp\\rust_mozprofileBmMjZb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695548283162	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695548283216	Marionette	INFO	Listening on port 61801
+WebDriver BiDi listening on ws://127.0.0.1:61790
+Read port: 61801
+1695548283395	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61790/devtools/browser/c2ebf5f5-9d39-4bcf-a0fe-d61d2c955daa
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.licdn.com/sc/h/5soyzzyxt32xpeav15k39wmxs, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.sys.mjs, line 111: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.sys.mjs, line 111: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.sys.mjs, line 168: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.sys.mjs" line: 111}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.sys.mjs" line: 111}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.linkedin.com."
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/13kkcrl8nam7yhkx6wayhrk1j, line 11877: unreachable code after return statement
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 102: Error: Could not get children of file(C:\Users\pson9\AppData\Local\Temp\rust_mozprofileBmMjZb\thumbnails) because it does not exist
+JavaScript warning: https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8, line 686: Script terminated by timeout at:
+emit@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:686:263
+Ze@https://static.licdn.com/aero-v1/sc/h/dsbj0bq41yas0kgkpx50bqyw8:687:142
+
+1695548389882	Marionette	INFO	Stopped listening on port 61801
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1695548389980	WebDriver BiDi	ERROR	Failed to stop protocol: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.sys.mjs :: allowAllCerts.disable :: line 51"  data: no] Stack trace: allowAllCerts.disable()@cert.sys.mjs:51
+destroy()@Session.sys.mjs:215
+deleteSession()@WebDriverBiDi.sys.mjs:140
+stop()@WebDriverBiDi.sys.mjs:228
