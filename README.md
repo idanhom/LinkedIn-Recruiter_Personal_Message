@@ -52,6 +52,9 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 -to be checked further.... this is the situation: i activate the script on a profile. it provides me with a text. currentl, i must close the window AND THEN press to next profile for the script to recognize that the url has changed.
     instead, what i want is that the script goes into "monitor mode" as soon as the python window has been presented. this might also mean that either (1) it opens up the windows in a new process or (2) it replaces the previous window 
 
+-make sure the script monitors the url constantly so all names are contanstly displayed when changing URL. if not, then display something different? 
+  - make sure this is placed in a correct way in flow regarding implementing new features so it starts at the right end
+
 
 
 
