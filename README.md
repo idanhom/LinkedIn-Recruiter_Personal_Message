@@ -42,10 +42,9 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 
 ## TODO
 -ad url to script (asking at start) so it's automatically inserted in the end text
-- Enhance the message generation by adhering to Cialdini's principles of persuasion.
-- after the output is printed, ask if "happy? otherwise, create another draft and output in another notepad document
 - Look more closely at https://github.com/bonigarcia/webdrivermanager/ for automated driver download
 -fix depreciation warning (ff). does it work afterwards?
+-make change so can swap job ad in the middle of the program without having to restart it
 
 
 ## Message Template Examples
