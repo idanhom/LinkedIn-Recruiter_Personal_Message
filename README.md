@@ -44,7 +44,15 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 -ad url to script (asking at start) so it's automatically inserted in the end text
 - Look more closely at https://github.com/bonigarcia/webdrivermanager/ for automated driver download
 -fix depreciation warning (ff). does it work afterwards?
+-make it not crash if i cut the text from the box, then close it, then want to paste it to a different window.
+  meaning: i want to be able to save the text to clipboard regardless of if the window is open or not. 
+-i also want to be able to save the location of the window (that pops from Python) so it opens at the same position each time (as the last time it was closed)
 -make change so can swap job ad in the middle of the program without having to restart it
+
+-to be checked further.... this is the situation: i activate the script on a profile. it provides me with a text. currentl, i must close the window AND THEN press to next profile for the script to recognize that the url has changed.
+    instead, what i want is that the script goes into "monitor mode" as soon as the python window has been presented. this might also mean that either (1) it opens up the windows in a new process or (2) it replaces the previous window 
+
+
 
 
 ## Message Template Examples
