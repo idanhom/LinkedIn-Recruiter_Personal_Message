@@ -44,6 +44,7 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 -ad url to script (asking at start) so it's automatically inserted in the end text
 - Look more closely at https://github.com/bonigarcia/webdrivermanager/ for automated driver download
 -fix depreciation warning (ff). does it work afterwards?
+
 -make it not crash if i cut the text from the box, then close it, then want to paste it to a different window.
   meaning: i want to be able to save the text to clipboard regardless of if the window is open or not. 
 -i also want to be able to save the location of the window (that pops from Python) so it opens at the same position each time (as the last time it was closed)
