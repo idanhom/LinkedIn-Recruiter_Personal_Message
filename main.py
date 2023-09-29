@@ -18,6 +18,7 @@ SE T/V (JOB AD)
 If you're passionate about the automotive business and have a master's degree in electrical, computational or automotive engineering, we want you to be a part of our team at Sebratec. Your role will revolve around ensuring the functionality and attributes required for safety systems, particularly focusing on software verification. You'll lead the charge in exploring and defining innovative methodologies to accelerate development, all while enhancing system verification, with a primary focus on HiL (Hardware-in-the-Loop) fidelity and integration. Your scope will include Automatization and Continuous Integration and Testing across diverse environments – from HiL simulations to real-world car testing. The position: Conceptualize, demonstrate, and integrate groundbreaking virtual methodologies for brake software testing. Collaborate with concept development and suppliers in line with platform and vehicle targets. Breakdown comprehensive vehicle attribute requirements into system-level specifications and oversee their fulfillment. Ensure software verification aligns with project milestones. Develop cutting-edge verification methods. Leading collaborations with other teams and suppliers. Requirements: A master's degree in electrical, computational or automotive engineering (or a close equivalent). A passion for cars and chassis systems. Competence in developing virtual analysis tools for system engineering. Forward-thinking abilities to anticipate future needs and draw insights from simulation and real-world data analysis. Ideally, 2-5 years of experience in software testing or development, SiL/HiL tools, and chassis systems for passenger cars. Familiar with the following Tools: C++, Vector, GIT/Gerrit, CANalyzer, CANoe, Vtest studio, CAPL, SW Quality Assurance.
 
 
+
 &aBd%YaHX4
 
 """
@@ -26,6 +27,7 @@ If you're passionate about the automotive business and have a master's degree in
 from web_scraping import initialize_browser, expand_linkedin_sections, extract_linkedin_details
 from user_interaction import monitor_url_and_prompt, get_output_language, open_notepad_with_message, open_independent_message_window
 from api_interaction import generate_message_with_chatgpt
+import threading
 
 def main():
     # Set the browser choice in the code
@@ -59,7 +61,7 @@ def main():
             message = generate_message_with_chatgpt('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', job_description, candidate_info, output_language)
 
             if message:
-                open_independent_message_window(message, candidate_info['name'])
+                threading.Thread(target=open_independent_message_window, args=(message, candidate_info['name'])).start()
                 browser.switch_to.window(browser.current_window_handle)
             
             print("\nwaiting for new profile to process...")
