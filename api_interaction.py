@@ -61,8 +61,8 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
 
         Create two versions of the message and label them as 'Version 1' and 'Version 2'. 
         Remove all citation marks and apostrophes.
-        Start the message with: "Your profile is very interesting because of your experience with"
-
+        Start the message with: "Your profile is very interesting because of your experience with".
+		Minimize tokens.
         """
 
 

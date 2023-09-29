@@ -44,6 +44,13 @@ def get_output_language():
 
 
 def open_independent_message_window(message, candidate_name):
+    def on_close():
+        # Before closing, store the text content in the system clipboard
+        clipboard_content = text_widget.get("1.0", tk.END)
+        root.clipboard_clear()
+        root.clipboard_append(clipboard_content)
+        root.destroy()
+    
     root = tk.Tk()
     root.title(f"Message for: {candidate_name}")
     
@@ -54,7 +61,9 @@ def open_independent_message_window(message, candidate_name):
     # Set the initial window size
     root.geometry("430x500")  # width x height
     
-    root.bind('<Escape>', lambda event: root.destroy())
+    root.protocol("WM_DELETE_WINDOW", on_close)  # Bind the on_close method to window close event
+    root.bind('<Escape>', lambda event: on_close())  # Bind the on_close method to Escape key event
+    
     root.mainloop()
 
 

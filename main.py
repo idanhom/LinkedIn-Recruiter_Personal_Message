@@ -2,11 +2,22 @@
 """
     #make so provides two versions in the same document.
 
+    
+Volvo Software tester (HiL)
 Linkedin folder for test:
-https://www.linkedin.com/talent/search/profile/AEMAACRLmGkBvbWWoxy97ZdGZs3_QMrmvfdtcVk?highlightedPatternSource=%255Cbaosp&searchContextId=703aadf7-a287-4015-b7f6-54304289277e&searchHistoryId=10466418464&searchKeyword=aosp%20&searchRequestId=cd4b32ea-2813-492e-bf67-9a2e2b398e12&start=0&trk=SEARCH_GLOBAL
+https://www.linkedin.com/talent/hire/1134091066/discover/recruiterSearch?searchContextId=091b02c1-2aa9-411b-9a2c-1c45fb93327e&searchHistoryId=10465098634&searchRequestId=20afa622-c257-4ae0-b08c-f1d75bdc5b13&start=0&uiOrigin=FACET_SEARCH
 
 Job description
-The company is growing and as a part of this, we are now looking for a skilled Android Developer for one of our clients! In your role, you will work with Android platform development (AOS) and customizing the operating system for the client's requirements. Would you like to work within a company that shares a startup mentality and a commitment to be a great workplace? Be a part of our Team! Who are you? You are social, open-minded, flexible, and thrive under challenging and changing conditions. As a person you are a curious, innovative, and analytical problem solver. You enjoy teamwork and have an inclusive approach to your work. You are not afraid to propose new ideas and promote them to the team. You deliver high-quality code and feel significant ownership of the code you produce. You are willing to cater to the complete lifecycle of the code. Mandatory requirements: 4+ years working with Software Development focusing on Android, Java, Kotlin, AOSP, Experience working with Android Platform development. Desired skills: CAN Architecture, GIT. 
+Your role will revolve around ensuring the functionality and attributes required for safety systems, particularly focusing on software verification. You'll lead the charge in exploring and defining innovative methodologies to accelerate development, all while enhancing system verification, with a primary focus on HiL (Hardware-in-the-Loop) fidelity and integration. Your scope will include Automatization and Continuous Integration and Testing across diverse environments – from HiL simulations to real-world car testing. The position: Conceptualize, demonstrate, and integrate groundbreaking virtual methodologies for brake software testing. Collaborate with concept development and suppliers in line with platform and vehicle targets. Breakdown comprehensive vehicle attribute requirements into system-level specifications and oversee their fulfillment. Ensure software verification aligns with project milestones. Develop cutting-edge verification methods. Leading collaborations with other teams and suppliers. Requirements: A master's degree in electrical, computational or automotive engineering (or a close equivalent). A passion for cars and chassis systems. Competence in developing virtual analysis tools for system engineering. Forward-thinking abilities to anticipate future needs and draw insights from simulation and real-world data analysis. Ideally, 2-5 years of experience in software testing or development, SiL/HiL tools, and chassis systems for passenger cars. Familiar with the following Tools: C++, Vector, GIT/Gerrit, CANalyzer, CANoe, Vtest studio, CAPL, SW Quality Assurance.
+-----
+
+Software Engineer (Testing/ verification) - (Volvo Cars)
+https://www.linkedin.com/talent/hire/1134091066/discover/recruiterSearch?searchContextId=73fcdafe-e900-4e3d-8381-7adafcceb55a&searchHistoryId=10465098634&searchRequestId=3a7b5b69-f811-4261-8727-36a4ab129dd1&start=0
+
+SE T/V (JOB AD)
+If you're passionate about the automotive business and have a master's degree in electrical, computational or automotive engineering, we want you to be a part of our team at Sebratec. Your role will revolve around ensuring the functionality and attributes required for safety systems, particularly focusing on software verification. You'll lead the charge in exploring and defining innovative methodologies to accelerate development, all while enhancing system verification, with a primary focus on HiL (Hardware-in-the-Loop) fidelity and integration. Your scope will include Automatization and Continuous Integration and Testing across diverse environments – from HiL simulations to real-world car testing. The position: Conceptualize, demonstrate, and integrate groundbreaking virtual methodologies for brake software testing. Collaborate with concept development and suppliers in line with platform and vehicle targets. Breakdown comprehensive vehicle attribute requirements into system-level specifications and oversee their fulfillment. Ensure software verification aligns with project milestones. Develop cutting-edge verification methods. Leading collaborations with other teams and suppliers. Requirements: A master's degree in electrical, computational or automotive engineering (or a close equivalent). A passion for cars and chassis systems. Competence in developing virtual analysis tools for system engineering. Forward-thinking abilities to anticipate future needs and draw insights from simulation and real-world data analysis. Ideally, 2-5 years of experience in software testing or development, SiL/HiL tools, and chassis systems for passenger cars. Familiar with the following Tools: C++, Vector, GIT/Gerrit, CANalyzer, CANoe, Vtest studio, CAPL, SW Quality Assurance.
+
+
 
 &aBd%YaHX4
 
@@ -16,6 +27,7 @@ The company is growing and as a part of this, we are now looking for a skilled A
 from web_scraping import initialize_browser, expand_linkedin_sections, extract_linkedin_details
 from user_interaction import monitor_url_and_prompt, get_output_language, open_notepad_with_message, open_independent_message_window
 from api_interaction import generate_message_with_chatgpt
+import threading
 
 def main():
     # Set the browser choice in the code
@@ -49,7 +61,7 @@ def main():
             message = generate_message_with_chatgpt('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', job_description, candidate_info, output_language)
 
             if message:
-                open_independent_message_window(message, candidate_info['name'])
+                threading.Thread(target=open_independent_message_window, args=(message, candidate_info['name'])).start()
                 browser.switch_to.window(browser.current_window_handle)
             
             print("\nwaiting for new profile to process...")
