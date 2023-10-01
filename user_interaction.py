@@ -45,15 +45,12 @@ def get_output_language():
 
 def open_independent_message_window(message, candidate_name):
     def on_close():
-        # Before closing, store the text content in the system clipboard
-        clipboard_content = text_widget.get("1.0", tk.END)
-        root.clipboard_clear()
-        root.clipboard_append(clipboard_content)
+        # Simply destroy the window, the clipboard content will be preserved
         root.destroy()
-    
+
     root = tk.Tk()
     root.title(f"Message for: {candidate_name}")
-    
+
     text_widget = tk.Text(root, wrap=tk.WORD)
     text_widget.insert(tk.INSERT, message)
     text_widget.pack(expand=True, fill=tk.BOTH)
@@ -61,8 +58,19 @@ def open_independent_message_window(message, candidate_name):
     # Set the initial window size
     root.geometry("430x500")  # width x height
     
+    # Create an auxiliary Tkinter instance to hold the clipboard content after the main window is closed
+    aux_clipboard = tk.Tk()
+    aux_clipboard.withdraw()  # Hide the auxiliary window
+
+    def preserve_clipboard():
+        content = aux_clipboard.clipboard_get()
+        aux_clipboard.clipboard_clear()
+        aux_clipboard.clipboard_append(content)
+        aux_clipboard.update()  # Update the auxiliary Tkinter instance to keep the clipboard content
+
     root.protocol("WM_DELETE_WINDOW", on_close)  # Bind the on_close method to window close event
     root.bind('<Escape>', lambda event: on_close())  # Bind the on_close method to Escape key event
+    root.bind('<Destroy>', lambda event: preserve_clipboard())  # Bind the preserve_clipboard method to Destroy event
     
     root.mainloop()
 
