@@ -45,14 +45,10 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 - Look more closely at https://github.com/bonigarcia/webdrivermanager/ for automated driver download
 -fix depreciation warning (ff). does it work afterwards?
 
--make it not crash if i cut the text from the box, then close it, then want to paste it to a different window.
-  meaning: i want to be able to save the text to clipboard regardless of if the window is open or not. 
 -i also want to be able to save the location of the window (that pops from Python) so it opens at the same position each time (as the last time it was closed)
 -make change so can swap job ad in the middle of the program without having to restart it
 
--This is the situation: i activate the script on a specific profile. The script scrapes the profile and sends it to ChatGPT. I then receive a message in Python's window. The issue then is that I first have to close the window and only when I close the window, the script goes into "monitor mode" again. However what I want, is that the script goes into "monitor mode" as soon as the text window has been presented.
-
--Also, another issue I'm having is that if i copy a message from the text window presented, and then cancel the Python text window. Then after I have copied the text and want to paste it to a different window (when the Python window is closed), the program crashes. 
+-before it actually scrapes the data, make sure i'm on the right web page of the candidate (their profile and not their "projects" or "messages" tab)
 
 -make sure the script monitors the url constantly so all names are contanstly displayed when changing URL. if not, then display something different? 
   - make sure this is placed in a correct way in flow regarding implementing new features so it starts at the right end
