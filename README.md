@@ -50,6 +50,8 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 
 -before it actually scrapes the data, make sure i'm on the right web page of the candidate (their profile and not their "projects" or "messages" tab)
 
+-it crashes if i press "hide" (at any time or only sometimes?) while the script is running
+
 -make sure the script monitors the url constantly so all names are contanstly displayed when changing URL. if not, then display something different? 
   - make sure this is placed in a correct way in flow regarding implementing new features so it starts at the right end
 
