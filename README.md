@@ -55,7 +55,13 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 -make sure the script monitors the url constantly so all names are contanstly displayed when changing URL. if not, then display something different? 
   - make sure this is placed in a correct way in flow regarding implementing new features so it starts at the right end
 
+-------------
+-Mitt LiR program: om det saknas länk till mapp som Selenium använder, be användaren ange länken
 
+Också: fixa med ordbehandlaren till Selenium profilen (sv/en) och att programmet laddar ner mappen från min Github det första den gör. Att sedan extrahera och ange.
+
+Mappens länk ska sparas i json i samma mapp programmet filen är i.
+-------------
 
 
 ## Message Template Examples
