@@ -27,7 +27,7 @@ def initialize_browser(agent_key="firefox"):
     user_agent = USER_AGENTS.get(agent_key, USER_AGENTS["firefox"])  # Default to Firefox if key not found
     
     if agent_key == "firefox":
-        profile_path = r"C:\Users\pson9\AppData\Roaming\Mozilla\Firefox\Profiles\8ewzfvju.SeleniumProfile"
+        profile_path = r"C:\Users\OscarPettersson\AppData\Roaming\Mozilla\Firefox\Profiles\8ewzfvju.SeleniumProfile"
         #private profile:
         # C:\Users\pson9\AppData\Roaming\Mozilla\Firefox\Profiles\8ewzfvju.SeleniumProfile
         options = FirefoxOptions()
