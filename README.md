@@ -1,5 +1,6 @@
 # LinkedIn Recruiter Tool: README
 
+
 ## Overview
 This tool is designed to help recruiters automate the process of extracting data from LinkedIn profiles using Selenium. The extracted data is then used to create a personalized message for potential candidates, which can be tailored to match the job description provided by the recruiter. The goal is to create unique and personalized messages to break through the noise that software developers often receive from recruiters on LinkedIn.
 
@@ -41,12 +42,19 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 6. **Generated Message**: If you choose to activate, the tool will extract data from the LinkedIn profile, generate a personalized message, and display it in Notepad.
 
 ## TODO
+
+-make change so can swap job ad in the middle of the program without having to restart it
+
+se till så programmet öppnar upp meddelandevyn efter den har gjort klart utkastet (eller undertiden?)
+
+
+
 -ad url to script (asking at start) so it's automatically inserted in the end text
 - Look more closely at https://github.com/bonigarcia/webdrivermanager/ for automated driver download
 -fix depreciation warning (ff). does it work afterwards?
 
--i also want to be able to save the location of the window (that pops from Python) so it opens at the same position each time (as the last time it was closed)
--make change so can swap job ad in the middle of the program without having to restart it
+
+
 
 -before it actually scrapes the data, make sure i'm on the right web page of the candidate (their profile and not their "projects" or "messages" tab)
 
