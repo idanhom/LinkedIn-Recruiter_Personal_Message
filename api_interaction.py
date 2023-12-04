@@ -30,7 +30,7 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         - Meddelandet ska väcka nyfikenhet och förmedla en känsla av exklusivitet, med hänvisning till de unika aspekterna av rollen och vår selektiva uppsökande verksamhet.
         - Meddelandet ska skrivas i första person, med ett språk på åttonde klassnivå och med vanliga ord och fraser.
         - Integrera subtilt Robert Cialdinis principer om engagemang och konsekvens, sociala bevis och knapphet för att öka engagemanget och svarsfrekvensen.
-        - Håll budskapet till ett stycke och max 4 meningar.
+        - Håll budskapet till ett stycke och max 3 meningar.
 
         Skapa två versioner av meddelandet och märk dem med "Version 1" och "Version 2". 
         Börja alltid texten med: Din profil är mycket intressant på grund av din erfarenhet av...
@@ -59,12 +59,12 @@ def generate_message_with_chatgpt(api_key, job_description, candidate_info, lang
         - The message should invoke curiosity and convey a sense of exclusivity, referencing the unique aspects of the role and our selective outreach.
         - The message should be written in first person, using 8th-grade level language and regular words and phrases.
         - Integrate subtly Robert Cialdini's principles of Commitment and Consistency, Social Proof, and Scarcity to enhance engagement and response rate.
-        - Keep the message to one paragraph and a maximum of 4 sentences.
+        - Keep the message to one paragraph and a maximum of 3 sentences.
 
         Create two versions of the message and label them as 'Version 1' and 'Version 2'. 
         Remove all citation marks and apostrophes.
         Start the message with: "Your profile is very interesting because of your experience with".
-		Minimize tokens. Keep each version to 3 sentences maximum.
+		Minimize tokens. Keep the text to 3 sentences maximum.
         """
 
 
