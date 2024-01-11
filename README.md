@@ -1,5 +1,7 @@
 # LinkedIn Recruiter Tool: README
 
+Note: currently broken. Need to fix.
+
 
 ## Overview
 This tool is designed to help recruiters automate the process of extracting data from LinkedIn profiles using Selenium. The extracted data is then used to create a personalized message for potential candidates, which can be tailored to match the job description provided by the recruiter. The goal is to create unique and personalized messages to break through the noise that software developers often receive from recruiters on LinkedIn.
