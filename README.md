@@ -1,6 +1,8 @@
 # LinkedIn Recruiter Tool: README
 
-Note: currently broken. Need to fix.
+Note: not maintained as of...
+
+FIX: interface.
 
 
 ## Overview
