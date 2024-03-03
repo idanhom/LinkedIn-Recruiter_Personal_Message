@@ -1,16 +1,8 @@
 #TODO
 """
-    #make so provides two versions in the same document.
 
-    
-SAAB
-
-Join our group specializing in Embedded Design. We primarily work on FPGA programming with a focus on embedded processors. We are excited to expand our team to tackle a range of thrilling projects including Low-Level Hardware Programming with a Firmware Focus (VHDL) where you can dive deep into hardware programming with a focus on Firmware development using VHDL, Implementation, Integration, and Lab Testing where you can collaborate on the implementation and integration of embedded systems, putting your solutions to the test in our lab environment, Develop Test Functions to create innovative test functions for both in-house designs and to evaluate the functionality of others' creations, Utilize Tools as we rely on tools like Matlab, Python, and SAFT (FitNesse) to craft comprehensive test cases, and Troubleshooting where you can engage in troubleshooting activities spanning both new and legacy functionalities. Requirements include FPGA Understanding where a solid grasp of how FPGA (Field-Programmable Gate Array) technology functions is crucial, Proficiency in VHDL as a proven track record in VHDL is a mandatory requirement, Additional Skills where knowledge of programming languages like C, C++, Matlab, and Python is highly advantageous, Agile Team Player where comfort and enthusiasm for working in agile teams is a must, and FPGA Programming Passion where a genuine desire and passion for programming FPGA devices is highly valued.
-
-https://www.linkedin.com/talent/hire/1133038714/discover/recruiterSearch?searchContextId=63b54328-6ace-40cc-b686-eed49ccd498b&searchHistoryId=10476218414&searchRequestId=7c4fb0d6-ea35-451c-9263-8acbff3ba3ae&start=0
-
-
-&aBd%YaHX4
+Easy access to job description: " "
+Easy access to linkedin pipeline URL: " "
 
 """
 
@@ -49,7 +41,7 @@ def main():
             print(f"\nProcessing profile of: {candidate_info['name']}")
             
             # Generate message with the adjusted function, using the previously selected output_language
-            message = generate_message_with_chatgpt('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', job_description, candidate_info, output_language)
+            message = generate_message_with_chatgpt('OPENAI-API-KEY', job_description, candidate_info, output_language)
 
             if message:
                 threading.Thread(target=open_independent_message_window, args=(message, candidate_info['name'])).start()

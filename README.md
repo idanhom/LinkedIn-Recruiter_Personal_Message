@@ -1,9 +1,16 @@
 # LinkedIn Recruiter Tool: README
 
-Note: not maintained as of...
+## Not maintained as of 2023-11-04
 
-FIX: interface.
 
+## TODO
+- While running the program, being able to enter "settings" mode, enabling changing job advert without having to restart the program.
+
+- Crashes if the user presses the button "Hide" on a user profile,
+
+- Include monitoring and automatic download of latest Selenium if that is missing
+
+- Create user interface (Tkinter) for easier managing
 
 ## Overview
 This tool is designed to help recruiters automate the process of extracting data from LinkedIn profiles using Selenium. The extracted data is then used to create a personalized message for potential candidates, which can be tailored to match the job description provided by the recruiter. The goal is to create unique and personalized messages to break through the noise that software developers often receive from recruiters on LinkedIn.
@@ -39,41 +46,12 @@ Before you can run the tool, you'll need the appropriate drivers for the browser
 
 ## How to use
 1. **Choose Browser**: Set the `browser_choice` in the code to either "firefox" or "chrome".
+2. Using Windows, press Win+R and write firefox.exe -P. Now create a new Firefox profile using and log in to Linkedin Recruiter using this. Then paste this path to "profile_path" in web_scraping.py. This makes so you don't have to verify yourself each time you  run the program.
 2. **Run the Script**: Execute the main function.
 3. **Enter Job Description**: When prompted, input the job description for the position you're recruiting for.
 4. **Provide LinkedIn URL**: Input the LinkedIn profile URL of the first candidate you're interested in.
 5. **Monitor URL Changes**: The tool will keep monitoring for URL changes. When it detects a different LinkedIn profile, it will prompt you to decide whether to activate the script for that profile.
 6. **Generated Message**: If you choose to activate, the tool will extract data from the LinkedIn profile, generate a personalized message, and display it in Notepad.
-
-## TODO
-
--make change so can swap job ad in the middle of the program without having to restart it
-
-se till så programmet öppnar upp meddelandevyn efter den har gjort klart utkastet (eller undertiden?)
-
-
-
--ad url to script (asking at start) so it's automatically inserted in the end text
-- Look more closely at https://github.com/bonigarcia/webdrivermanager/ for automated driver download
--fix depreciation warning (ff). does it work afterwards?
-
-
-
-
--before it actually scrapes the data, make sure i'm on the right web page of the candidate (their profile and not their "projects" or "messages" tab)
-
--it crashes if i press "hide" (at any time or only sometimes?) while the script is running
-
--make sure the script monitors the url constantly so all names are contanstly displayed when changing URL. if not, then display something different? 
-  - make sure this is placed in a correct way in flow regarding implementing new features so it starts at the right end
-
--------------
--Mitt LiR program: om det saknas länk till mapp som Selenium använder, be användaren ange länken
-
-Också: fixa med ordbehandlaren till Selenium profilen (sv/en) och att programmet laddar ner mappen från min Github det första den gör. Att sedan extrahera och ange.
-
-Mappens länk ska sparas i json i samma mapp programmet filen är i.
--------------
 
 
 ## Message Template Examples

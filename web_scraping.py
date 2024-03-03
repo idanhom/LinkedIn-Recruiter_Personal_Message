@@ -28,8 +28,6 @@ def initialize_browser(agent_key="firefox"):
     
     if agent_key == "firefox":
         profile_path = r"C:\Users\OscarPettersson\AppData\Roaming\Mozilla\Firefox\Profiles\8ewzfvju.SeleniumProfile"
-        #private profile:
-        # C:\Users\pson9\AppData\Roaming\Mozilla\Firefox\Profiles\8ewzfvju.SeleniumProfile
         options = FirefoxOptions()
         options.set_preference("general.useragent.override", user_agent)
         options.set_preference("dom.webdriver.enabled", False)
